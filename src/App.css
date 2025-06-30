@@ -1,0 +1,179 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* Estilos para o Paint Kids - versão mais infantil e divertida */
+.paint-app {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 1rem;
+  background: linear-gradient(135deg, #fffbe7 60%, #ffe0f7 100%);
+  border-radius: 24px;
+  box-shadow: 0 4px 24px #0002;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 4px dashed #ffb184;
+}
+
+.paint-app h1 {
+  color: #ff7f50;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-family: 'Comic Sans MS', 'Comic Sans', cursive, sans-serif;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 0 #fff, 4px 4px 0 #ffb184;
+}
+
+.toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  align-items: center;
+  justify-content: center;
+  background: #fff6d6;
+  border-radius: 16px;
+  padding: 0.7rem 1rem;
+  box-shadow: 0 2px 8px #ffb18444;
+}
+
+.colors button {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  margin: 0 3px;
+  cursor: pointer;
+  outline: none;
+  transition: border 0.2s, transform 0.2s;
+  box-shadow: 0 2px 6px #0001;
+}
+.colors button.selected {
+  border: 3px solid #3ad29f;
+  box-shadow: 0 0 0 4px #3ad29f55, 0 2px 6px #0001;
+  transform: scale(1.1) rotate(-4deg);
+  z-index: 1;
+}
+
+.brush-sizes button {
+  background: none;
+  border: none;
+  margin: 0 3px;
+  cursor: pointer;
+  padding: 2px;
+  transition: transform 0.2s;
+}
+.brush-sizes button.selected span {
+  box-shadow: 0 0 0 4px #3ad29f55;
+  border: 2px solid #3ad29f;
+  transform: scale(1.15) rotate(4deg);
+  z-index: 1;
+}
+
+.clear-btn, .save-btn {
+  background: linear-gradient(90deg, #ffb184 60%, #ff7f50 100%);
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  padding: 0.6em 1.3em;
+  font-size: 1.1em;
+  margin-left: 10px;
+  cursor: pointer;
+  font-family: 'Comic Sans MS', 'Comic Sans', cursive, sans-serif;
+  font-weight: bold;
+  letter-spacing: 1px;
+  box-shadow: 0 2px 8px #ffb18444;
+  transition: background 0.2s, transform 0.2s;
+}
+.clear-btn:hover, .save-btn:hover {
+  background: linear-gradient(90deg, #ff7f50 60%, #ffb184 100%);
+  transform: scale(1.08) rotate(-3deg);
+}
+
+.canvas-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background: #ffe0f7;
+  border-radius: 18px;
+  box-shadow: 0 2px 12px #ffb18433;
+  padding: 1.2rem 0.5rem;
+  border: 2px dotted #ffb184;
+}
+
+.paint-canvas {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px #ffb18433;
+  touch-action: none;
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  min-height: 320px;
+  border: 4px solid #ff7f50;
+}
+
+@media (max-width: 600px) {
+  html, body {
+    font-size: 16px;
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive, sans-serif;
+  }
+  .paint-app h1 {
+    font-size: 2rem;
+  }
+  .clear-btn, .save-btn {
+    font-size: 1em;
+  }
+  .paint-app {
+    padding: 0.5rem;
+    min-height: 100vh;
+  }
+  .canvas-container {
+    padding: 0.5rem 0;
+  }
+  .paint-canvas {
+    max-width: 320px;
+    min-height: 200px;
+  }
+}
