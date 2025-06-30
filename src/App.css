@@ -157,7 +157,7 @@
 @media (max-width: 600px) {
   html, body {
     font-size: 16px;
-    font-family: 'Comic Sans MS', 'Comic Sans', cursive, sans-serif;
+    font-family: 'Comic Neue', sans-serif;
   }
   .paint-app h1 {
     font-size: 2rem;
