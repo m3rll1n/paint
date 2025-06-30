@@ -60,7 +60,7 @@
   color: #ff7f50;
   font-size: 2.5rem;
   margin-bottom: 1rem;
-  font-family: 'Comic Sans MS', 'Comic Sans', cursive, sans-serif;
+  font-family: Arial, sans-serif;
   letter-spacing: 2px;
   text-shadow: 2px 2px 0 #fff, 4px 4px 0 #ffb184;
 }
@@ -120,7 +120,7 @@
   font-size: 1.1em;
   margin-left: 10px;
   cursor: pointer;
-  font-family: 'Comic Sans MS', 'Comic Sans', cursive, sans-serif;
+  font-family: Arial, sans-serif;
   font-weight: bold;
   letter-spacing: 1px;
   box-shadow: 0 2px 8px #ffb18444;
@@ -157,7 +157,7 @@
 @media (max-width: 600px) {
   html, body {
     font-size: 16px;
-    font-family: 'Comic Neue', sans-serif;
+    font-family: Arial, sans-serif;
   }
   .paint-app h1 {
     font-size: 2rem;
